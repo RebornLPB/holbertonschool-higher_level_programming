@@ -21,10 +21,10 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cur_query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(
+    cquery = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(
         name_arg
         )
-    cursor.execute(cur_query)
+    cursor.execute(cquery)
     query = cursor.fetchall()
 
     for row in query:
