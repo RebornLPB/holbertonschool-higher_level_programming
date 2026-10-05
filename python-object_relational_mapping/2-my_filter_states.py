@@ -21,9 +21,8 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cquery = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(
-        name_arg
-        )
+    cquery = "SELECT * FROM states WHERE name LIKE BINARY '{}' " \
+             "ORDER BY id ASC".format(name_arg)
     cursor.execute(cquery)
     query = cursor.fetchall()
 
