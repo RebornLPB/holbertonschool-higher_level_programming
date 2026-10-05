@@ -21,8 +21,9 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cur_query = "SELET * FROM states WHERE name = '{}' ORDER BY id ASC".format(
-        name_arg)
+    cur_query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(
+        name_arg
+        )
     cursor.execute(cur_query)
     query = cursor.fetchall()
 
