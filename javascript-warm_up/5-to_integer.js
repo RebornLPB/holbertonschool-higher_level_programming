@@ -2,4 +2,8 @@
 
 const argInInt = parseInt(process.argv[3]);
 
-console.log(`My number: ${argInInt}`);
+if (argInInt) {
+  console.log(`My number: ${argInInt}`);
+} else {
+  console.log('Not a number');
+}
