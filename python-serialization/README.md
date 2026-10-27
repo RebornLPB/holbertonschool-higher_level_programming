@@ -15,7 +15,7 @@ All scripts target **Python 3.8+**.
 ## 🛠️ Requirements & Engineering Constraints
 * **OS:** Ubuntu 20.04 LTS
 * **Interpreter:** `python3` (version 3.8.5+)
-* **Style Guide:** 100% compliant with PEP 8 standards (verified via `pycodestyle`).
+* **Style Guide:** Code is meant to follow the PEP 8 style guide (check with `pycodestyle`).
 
 ## 📁 File List & Tasks Directory
 
